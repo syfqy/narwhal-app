@@ -2,7 +2,7 @@ import React from 'react'
 
 function ActivityFeed() {
   return (
-    <div>ActivityFeed</div>
+    <div className="activity-container">ActivityFeed</div>
   )
 }
 
