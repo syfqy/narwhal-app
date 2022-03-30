@@ -11,7 +11,7 @@ import HelpIcon from "@mui/icons-material/Help";
 function SideNavBar() {
   return (
     <div className="sidenav">
-      SideNavBar
+      Logo here
       <div className="sidenav-item">
         <QuestionAnswerIcon />
       </div>
