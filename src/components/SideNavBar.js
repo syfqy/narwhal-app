@@ -1,6 +1,4 @@
 import React from "react";
-// import SideNavItem from "./SideNavItem";
-// import swlogo from "../assets/images/sw-logo.jpg";
 
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
