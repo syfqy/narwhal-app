@@ -4,19 +4,17 @@ import '../assets/styles/styles.css';
 import SideNavBar from './SideNavBar';
 import Header from './Header';
 import MainNavBar from './MainNavBar';
-import MainContent from './MainContent';
-import ActivityFeed from './ActivityFeed';
+import MainBackground from './MainBackground';
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <SideNavBar>SideNavBar</SideNavBar>
-        <Header>Header</Header>
-        <MainNavBar>MainNavBar</MainNavBar>
-        <MainContent>MainContent</MainContent>
-        <ActivityFeed>ActivityFeed</ActivityFeed>
+        <SideNavBar/>
+        <Header />
+        <MainNavBar />
+        <MainBackground />
         <Footer>Footer</Footer>
       </div>
     </div>

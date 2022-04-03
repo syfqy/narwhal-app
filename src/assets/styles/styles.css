@@ -69,7 +69,7 @@ body {
     grid-template-areas: 
         "sn mn mn mn mn mn mn mn mn mn mn"
         "sn hd hd hd hd hd hd hd hd hd hd"
-        "sn mc mc mc mc mc mc mc ac ac ac"
+        "sn mc mc mc mc mc mc mc mc mc mc"
         "ft ft ft ft ft ft ft ft ft ft ft"
 }
 
@@ -197,14 +197,94 @@ body {
     padding: 0.75rem 0.875rem 0.75rem 0.625rem;
 }
 
-.main-container {
+/* main */
+
+.main-bg {
     grid-area: mc;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
     background-color: #E5E5E5;
 }
 
+
+.main-content {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    /* min-width: 100; */
+    /* width: 75%; */
+    flex: 2 1 auto;
+    padding: 1rem 2rem;
+    /* max-height: 75%; */
+}
+
+.main-content > div {
+    display: flex;
+}
+
+.content-header {
+    justify-content: space-between;
+    border-bottom: 1px solid #E4E7EC;
+}
+
+.cards-grid {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.team-card {
+    flex-direction: column;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #E4E7EC;
+}
+
+.team-card > div {
+    display: flex;
+}
+
+.team-header {
+    gap: 1rem;
+}
+
+.team-details {
+    flex-direction: column;
+}
+
+.team-details > * {
+    margin: 0;
+}
+
+.team-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.team-header > *:last-child {
+    margin-left:auto;
+}
+
+.team-metrics {
+    display: flex;
+    gap: 0.5rem;
+    border-top: 1px solid #E4E7EC;
+    align-items: center;
+    color: #000;
+    opacity: 0.5;
+}
+
+/* activity */
+
 .activity-container {
-    grid-area: ac;
-    background-color: #E5E5E5;
+    background-color: #fff;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 25%;
+    max-height: 25%;
 }
 
 .footer {

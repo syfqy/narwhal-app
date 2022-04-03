@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function ActivityFeed() {
   return (
@@ -6,4 +6,4 @@ function ActivityFeed() {
   )
 }
 
-export default ActivityFeed
+export default ActivityFeed;
