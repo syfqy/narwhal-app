@@ -1,6 +1,3 @@
-// import './App.css';
-import '../assets/styles/styles.css';
-
 import React, {useState}  from "react";
 import SideNavBar from './SideNavBar';
 import Header from './Header';
@@ -26,7 +23,6 @@ function App() {
           changeTab={changeTab}
            />
         <MainBackground currentTab={currentTab}/>
-        <Footer>Footer</Footer>
       </div>
     </div>
   );

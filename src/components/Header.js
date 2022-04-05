@@ -2,6 +2,8 @@ import React from "react";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import AddIcon from "@mui/icons-material/Add";
 import TeamsTabBar from "./TeamsTabBar";
+import SearchIcon from '@mui/icons-material/Search';
+import TextField from "@mui/material/TextField";
 
 function Header(props) {
   return (
@@ -16,10 +18,24 @@ function Header(props) {
           <p>CREATE NEW TEAM</p>
         </button>
       </div>
-      <TeamsTabBar
-        currentTab={props.currentTab}
-        changeTab={props.changeTab}
-      />
+      <div className="third-header">
+        <TeamsTabBar
+          currentTab={props.currentTab}
+          changeTab={props.changeTab}
+        />
+        <div className="search-bar">
+          <SearchIcon 
+            sx={{
+            marginRight: "0.5rem",
+            marginTop:"1.2rem",
+            opacity: "50%"}}/>
+          <TextField
+          InputProps={{ disableUnderline: true }}
+          id="standard-basic"
+          label="Search team name..."
+          variant="standard" />
+        </div>
+      </div>
     </div>
   );
 }

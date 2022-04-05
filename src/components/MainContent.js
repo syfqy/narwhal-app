@@ -7,16 +7,18 @@ function MainContent(props) {
 
   const currentTabMap = {
     0: "All",
-    1: "Favorites",
+    1: "Favorited",
     2: "Archived",
   }
 
+  const currentTabName = currentTabMap[props.currentTab]
+
   const getCurrentTeams = (()=>{
-    if (currentTabMap[props.currentTab] === "Favorites") {
+    if (currentTabName === "Favorited") {
       return teams.filter((team) =>
         team.is_favorited
       )
-    } else if (currentTabMap[props.currentTab] === "Archived") {
+    } else if (currentTabName === "Archived") {
       return teams.filter((team) => 
         team.is_archived
       )}
@@ -33,7 +35,7 @@ function MainContent(props) {
   return (
     <div className="main-content">
       <div className="content-header">
-        <h2>All Teams</h2>
+        <h2>{currentTabName} Teams</h2>
         <p className="grey-out">
           Showing {nCurrentTeams} out of {nAllTeams} teams
         </p>
