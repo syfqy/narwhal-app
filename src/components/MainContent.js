@@ -4,7 +4,6 @@ import data from "./data";
 
 function MainContent() {
   const teams = data.teams;
-  console.log(teams);
 
   const nCurrentTeams = 65;
   const nAllTeams = 65;
