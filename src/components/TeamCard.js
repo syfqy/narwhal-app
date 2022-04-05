@@ -1,5 +1,5 @@
 import React from "react";
-import StarOutlineIcon from "@mui/icons-material/StarOutline";
+import StarIcon from '@mui/icons-material/Star';
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import PeopleIcon from "@mui/icons-material/People";
 
@@ -13,7 +13,10 @@ function TeamCard(props) {
           <h2>{props.name}</h2>
           <p className="grey-out">Created at: {props.createdAt}</p>
         </div>
-        <StarOutlineIcon />
+        {props.isFavorited ?
+        <StarIcon style={{fill: "#E4E7EC"}}/> :
+        <StarIcon style={{fill: "#F8CE43"}}/>
+        }
       </div>
       <p>{props.desc}</p>
       <div className="team-metrics">
