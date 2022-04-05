@@ -4,9 +4,26 @@ import data from "./data";
 
 function MainContent() {
   const teams = data.teams;
+  const currentTab = "Favorites" 
 
-  const nCurrentTeams = 65;
-  const nAllTeams = 65;
+  const getCurrentTeams = (()=>{
+    if (currentTab === "Favorites") {
+      return teams.filter((team) =>
+        team.is_favorited
+      )
+    } else if (currentTab === "Archived") {
+      return teams.filter((team) => 
+        team.is_archived
+      )}
+    else {
+      return teams
+    }
+  })
+
+  const currentTeams = getCurrentTeams();
+
+  const nCurrentTeams = currentTeams.length;
+  const nAllTeams = teams.length;
 
   return (
     <div className="main-content">

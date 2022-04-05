@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <SideNavBar/>
-        <Header />
         <MainNavBar />
+        <Header />
         <MainBackground />
         <Footer>Footer</Footer>
       </div>

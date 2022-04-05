@@ -14,8 +14,8 @@ function TeamCard(props) {
           <p className="grey-out">Created at: {props.createdAt}</p>
         </div>
         {props.isFavorited ?
-        <StarIcon style={{fill: "#E4E7EC"}}/> :
-        <StarIcon style={{fill: "#F8CE43"}}/>
+        <StarIcon style={{fill: "#F8CE43"}}/> :
+        <StarIcon style={{fill: "#E4E7EC"}}/> 
         }
       </div>
       <p>{props.desc}</p>

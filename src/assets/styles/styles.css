@@ -26,6 +26,7 @@
 
 * {
     font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 /* utlity classes */
@@ -130,11 +131,17 @@ body {
 }
 
 .main-nav > div:first-child{
-    border: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+    /* margin-left: 2rem; */
+    padding: 0 2rem;
 }
 
 .main-nav > div:nth-last-child(2) {
     margin-left: auto;
+}
+
+.main-nav > div:last-child {
+    margin-right: 2rem;
 }
 
 .inbox-btn {
@@ -176,12 +183,18 @@ body {
 
 /* header */
 
-.header {
+.main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-area: hd;
+    padding: 0 2rem;
+}
+
+.second-header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0 1rem;
-    grid-area: hd;
     background-color: #fff;
 }
 
@@ -196,6 +209,10 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 0.875rem 0.75rem 0.625rem;
+}
+
+h2.tab-label {
+    text-transform: None;
 }
 
 /* main */
