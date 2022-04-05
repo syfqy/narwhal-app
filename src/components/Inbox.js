@@ -1,11 +1,11 @@
 import React from "react";
 import InboxIcon from "@mui/icons-material/Inbox";
 
-function Inbox() {
+function Inbox(props) {
   return (
     <div className="inbox-btn">
       <InboxIcon />
-      <span className="notification-badge">3</span>
+      <span className="notification-badge">{props.nCount}</span>
     </div>
   );
 }

@@ -16,7 +16,6 @@ function TeamCard(props) {
         <StarOutlineIcon />
       </div>
       <p>{props.desc}</p>
-      {/* <p>{props.desc.substring(0, 101) + "..."}</p> */}
       <div className="team-metrics">
         <QuestionAnswerIcon />
         <p>{props.cCount} Campaigns</p>

@@ -28,7 +28,7 @@ function MainContent() {
             lCount={team.leads_count}
             isFavorited={team.is_favorited}
             isArchived={team.is_archived}
-            createdAt={team.createdAt}
+            createdAt={team.created_at}
           />
         ))}
       </div>

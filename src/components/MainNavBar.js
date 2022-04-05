@@ -1,6 +1,5 @@
 import React from "react";
-import Inbox from "./Inbox";
-import Profile from "./Profile";
+import UserInfo from "./UserInfo";
 
 function MainNavBar() {
   return (
@@ -11,8 +10,7 @@ function MainNavBar() {
       <div>
         <h2>Teams</h2>
       </div>
-      <Inbox />
-      <Profile />
+      <UserInfo />
     </div>
   );
 }

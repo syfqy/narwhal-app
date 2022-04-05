@@ -1,16 +1,16 @@
-import React from 'react'
-import ProfilePhoto from './ProfilePhoto'
-import placeholder from '../assets/images/profile-placeholder.png'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import React from "react";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-function Profile() {
+function Profile(props) {
   return (
     <div className="profile-info">
-        <p className="profile-greeting grey-out">Hello, John</p>
-        <ProfilePhoto src={placeholder} alt="placeholder"/>
-        <ArrowDropDownIcon sx={{ opacity: 0.5 }}/>
+      <p className="profile-greeting grey-out">Hello, {props.name}</p>
+      <div>
+        <img className="profile-img" src={props.avatar} />
+      </div>
+      <ArrowDropDownIcon sx={{ opacity: 0.5 }} />
     </div>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
