@@ -2,10 +2,10 @@ import React from 'react'
 import MainContent from './MainContent';
 import ActivityFeed from './ActivityFeed';
 
-function MainBackground() {
+function MainBackground(props) {
   return (
     <section className="main-bg">
-        <MainContent />
+        <MainContent currentTab={props.currentTab}/>
         <ActivityFeed />
     </section>
   )

@@ -2,16 +2,21 @@ import React from "react";
 import TeamCard from "./TeamCard";
 import data from "./data";
 
-function MainContent() {
+function MainContent(props) {
   const teams = data.teams;
-  const currentTab = "Favorites" 
+
+  const currentTabMap = {
+    0: "All",
+    1: "Favorites",
+    2: "Archived",
+  }
 
   const getCurrentTeams = (()=>{
-    if (currentTab === "Favorites") {
+    if (currentTabMap[props.currentTab] === "Favorites") {
       return teams.filter((team) =>
         team.is_favorited
       )
-    } else if (currentTab === "Archived") {
+    } else if (currentTabMap[props.currentTab] === "Archived") {
       return teams.filter((team) => 
         team.is_archived
       )}
@@ -35,7 +40,7 @@ function MainContent() {
       </div>
 
       <div className="cards-grid">
-        {teams.map((team) => (
+        {currentTeams.map((team) => (
           <TeamCard
             key={team.id}
             name={team.name}

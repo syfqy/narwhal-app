@@ -3,7 +3,7 @@ import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import AddIcon from "@mui/icons-material/Add";
 import TeamsTabBar from "./TeamsTabBar";
 
-function Header() {
+function Header(props) {
   return (
     <div className="main-header">
       <div className="second-header">
@@ -16,7 +16,10 @@ function Header() {
           <p>CREATE NEW TEAM</p>
         </button>
       </div>
-      <TeamsTabBar />
+      <TeamsTabBar
+        currentTab={props.currentTab}
+        changeTab={props.changeTab}
+      />
     </div>
   );
 }
