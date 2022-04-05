@@ -1,3 +1,5 @@
+//TODO: fetch data from mock api
+
 const data = {
   teams: [
     {

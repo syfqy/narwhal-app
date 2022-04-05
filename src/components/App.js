@@ -3,7 +3,6 @@ import SideNavBar from './SideNavBar';
 import Header from './Header';
 import MainNavBar from './MainNavBar';
 import MainBackground from './MainBackground';
-import Footer from './Footer';
 
 function App() {
 

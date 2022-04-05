@@ -6,6 +6,8 @@ import PeopleIcon from "@mui/icons-material/People";
 import MonitorHeartIcon from "@mui/icons-material/MonitorHeart";
 import HelpIcon from "@mui/icons-material/Help";
 
+
+//TODO: insert main logo
 function SideNavBar() {
   return (
     <div className="sidenav">

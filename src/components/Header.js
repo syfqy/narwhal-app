@@ -5,6 +5,8 @@ import TeamsTabBar from "./TeamsTabBar";
 import SearchIcon from '@mui/icons-material/Search';
 import TextField from "@mui/material/TextField";
 
+//TODO: move search bar into separate component
+
 function Header(props) {
   return (
     <div className="main-header">
