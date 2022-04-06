@@ -11,14 +11,14 @@ function TeamCard(props) {
         <img className="team-logo" src={props.img} />
         <div className="team-details">
           <h2>{props.name}</h2>
-          <p className="grey-out">Created at: {props.createdAt}</p>
+          <p className="grey-out">Created on {props.createdAt ? props.createdAt : "-"}</p>
         </div>
         {props.isFavorited ?
         <StarIcon style={{fill: "#F8CE43"}}/> :
         <StarIcon style={{fill: "#E4E7EC"}}/> 
         }
       </div>
-      <p>{props.desc}</p>
+      <p>{props.desc.substring(0, 100) + "..."}</p>
       <div className="team-metrics">
         <QuestionAnswerIcon />
         <p>{props.cCount} Campaigns</p>

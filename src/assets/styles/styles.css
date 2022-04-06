@@ -76,7 +76,7 @@ body {
 
 /* side nav bar*/
 
-.sidenav {
+.sidenav { /*fix to left and overlap other elements when horizontal scrolling*/
     grid-area: sn;
     display: flex;
     position: fixed;
@@ -93,26 +93,29 @@ body {
     max-width: fit-content;
 }
 
+.sidenav-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
 .sidenav-item {
     color: #fff;
     opacity: 0.3;
     padding: 0.5rem;
     width: 100%;
-    box-sizing: border-box;
     text-align: center;
     margin: 0;
 }
 
-.sidenav-icon {
-    height: 3rem;
-    width: 3rem;
+.sidenav-item:first-child { 
+    opacity: 1; 
 }
 
 .sidenav-item:last-child {
     margin-top: auto;
 }
 
-.sidenav-item:hover {
+.sidenav-item:not(:first-child):hover { /*no hover over sw logo*/
     background-color: #2995DA;
     opacity: 1;
 }
@@ -193,7 +196,7 @@ body {
 
 /* header */
 
-.main-header {
+.header-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -201,20 +204,20 @@ body {
     padding: 0 2rem;
 }
 
-.second-header {
+.header-container > div {
     display: flex;
     align-items: center;
+}
+
+.main-header {
     gap: 1rem;
     background-color: #fff;
 }
 
-.third-header {
-    display: flex;
-    align-items: center;
+.second-header {
     justify-content: space-between;
     background-color: #fff;
 }
-
 
 .create-team-btn {
     margin-left: auto;
@@ -230,7 +233,7 @@ body {
 }
 
 h2.tab-label {
-    text-transform: None;
+    text-transform: None; /*override to uppercase*/
 }
 
 /* main */
@@ -265,7 +268,7 @@ h2.tab-label {
 .cards-grid {
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .team-card {
@@ -323,7 +326,7 @@ h2.tab-label {
     min-height: fit-content;
     max-height: 40%;
     overflow-y: scroll;
-    padding: 1rem;
+    padding: 1rem 2rem;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05),
                  0px 0px 30px rgba(0, 0, 0, 0.1);
 }
@@ -336,7 +339,10 @@ h2.tab-label {
     display: flex;
     gap: 1rem;
     margin: 0.5rem 0;
-    /* min-width: 75%; */
+}
+
+.activity-card:nth-child(2) {
+    margin-top: 2rem;
 }
 
 .activity-avatar {

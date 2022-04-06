@@ -6,6 +6,7 @@ import MainBackground from './MainBackground';
 
 function App() {
 
+  // sets current tab to display different types of teams
   const [currentTab, setCurrentTab] = useState(0);
 
   const changeTab = (newTab) => {

@@ -5,27 +5,29 @@ import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import PeopleIcon from "@mui/icons-material/People";
 import MonitorHeartIcon from "@mui/icons-material/MonitorHeart";
 import HelpIcon from "@mui/icons-material/Help";
+import logo from "../assets/images/logo.png";
 
-
-//TODO: insert main logo
 function SideNavBar() {
+  //TODO: move sidenav-item to separate component
   return (
     <div className="sidenav">
-      Logo here
       <div className="sidenav-item">
-        <QuestionAnswerIcon />
+        <img className="sidenav-logo" src={logo} />
       </div>
       <div className="sidenav-item">
-        <CorporateFareIcon />
+        <QuestionAnswerIcon fontSize="large" />
       </div>
       <div className="sidenav-item">
-        <PeopleIcon />
+        <CorporateFareIcon fontSize="large" />
       </div>
       <div className="sidenav-item">
-        <MonitorHeartIcon />
+        <PeopleIcon fontSize="large" />
       </div>
       <div className="sidenav-item">
-        <HelpIcon />
+        <MonitorHeartIcon fontSize="large" />
+      </div>
+      <div className="sidenav-item">
+        <HelpIcon fontSize="large" />
       </div>
   </div>
   );

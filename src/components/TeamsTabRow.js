@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 
-function TeamsTabBar(props) {
+function TeamsTabRow(props) {
 
   return (
     <Tabs
@@ -29,4 +29,4 @@ function TeamsTabBar(props) {
   );
 }
 
-export default TeamsTabBar;
+export default TeamsTabRow;

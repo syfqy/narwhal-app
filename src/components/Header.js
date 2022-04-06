@@ -1,16 +1,13 @@
 import React from "react";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import AddIcon from "@mui/icons-material/Add";
-import TeamsTabBar from "./TeamsTabBar";
-import SearchIcon from '@mui/icons-material/Search';
-import TextField from "@mui/material/TextField";
-
-//TODO: move search bar into separate component
+import TeamsTabRow from "./TeamsTabRow";
+import SearchBar from "./SearchBar";
 
 function Header(props) {
   return (
-    <div className="main-header">
-      <div className="second-header">
+    <div className="header-container">
+      <div className="main-header">
         <CorporateFareIcon
           sx={{ opacity: 0.5, width: "3rem", height: "3rem" }}
         />
@@ -20,23 +17,12 @@ function Header(props) {
           <p>CREATE NEW TEAM</p>
         </button>
       </div>
-      <div className="third-header">
-        <TeamsTabBar
+      <div className="second-header">
+        <TeamsTabRow
           currentTab={props.currentTab}
           changeTab={props.changeTab}
         />
-        <div className="search-bar">
-          <SearchIcon 
-            sx={{
-            marginRight: "0.5rem",
-            marginTop:"1.2rem",
-            opacity: "50%"}}/>
-          <TextField
-          InputProps={{ disableUnderline: true }}
-          id="standard-basic"
-          label="Search team name..."
-          variant="standard" />
-        </div>
+        <SearchBar/>
       </div>
     </div>
   );
