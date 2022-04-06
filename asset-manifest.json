@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/narwhal-app/static/css/main.ce8fd78d.css",
+    "main.js": "/narwhal-app/static/js/main.294baeef.js",
+    "static/js/787.d37a21c1.chunk.js": "/narwhal-app/static/js/787.d37a21c1.chunk.js",
+    "index.html": "/narwhal-app/index.html",
+    "main.ce8fd78d.css.map": "/narwhal-app/static/css/main.ce8fd78d.css.map",
+    "main.294baeef.js.map": "/narwhal-app/static/js/main.294baeef.js.map",
+    "787.d37a21c1.chunk.js.map": "/narwhal-app/static/js/787.d37a21c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce8fd78d.css",
+    "static/js/main.294baeef.js"
+  ]
+}
