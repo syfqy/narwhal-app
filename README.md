@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Saleswhale UI App
+
+The app is hosted on github-pages and can be viewed [here](https://syfqy.github.io/narwhal-app/)
+The source code can be viewed [here](https://github.com/syfqy/narwhal-app)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
