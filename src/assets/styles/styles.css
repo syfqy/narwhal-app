@@ -364,8 +364,3 @@ h2.tab-label {
 .activity-details > p {
     margin: 0;
 }
-
-.footer {
-    grid-area: ft;
-    background-color: pink;
-}
