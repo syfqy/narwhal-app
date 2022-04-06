@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Inbox from "./Inbox";
 import Profile from "./Profile";
-import useFetch from "./useFetch";
 
 function UserInfo() {
   // get current user
